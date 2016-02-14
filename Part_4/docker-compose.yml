@@ -1,0 +1,14 @@
+app:
+    build: .
+    volumes:
+        - "./app:/src/app"
+    ports: 
+        - "3000:3000"
+        - "35729:35729"
+    links:
+        - mongo
+mongo:
+  image: mongo
+  command: --smallfiles
+  ports:
+    - "27017:27017"

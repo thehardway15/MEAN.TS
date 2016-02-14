@@ -1,0 +1,8 @@
+INSTALATION INSTRUCTION
+
+cd app
+bower install
+cd ..
+docker-compose build
+docker-compose run app gulp --gulpfile app/gulpfile.js copy_angular
+docker compose up

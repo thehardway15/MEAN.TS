@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Express HTML</title>
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+  <script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
+
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/vendor/dist/es6-shim.min.js"></script>
+  <script src="/vendor/dist/system-polyfills.js"></script>
+
+  <script src="/vendor/dist/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="/vendor/dist/system.src.js"></script>
+  <script src="/vendor/dist/Rx.js"></script>
+  <script src="/vendor/dist/angular2/bundles/angular2.dev.js"></script>
+  <!-- 2. Configure SystemJS -->
+  <script>
+    System.config({
+    packages: {        
+        app: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+    }
+    });
+    System.import('app/main')
+        .then(null, console.error.bind(console));
+  </script>
+</head>
+<body>
+  <div style="margin:100px;">
+    <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Express HTML</a>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="jumbotron"  style="padding:40px;">
+      <users>
+          <h2 class="text-center">Loading App...</h2
+      </users>
+    </div>
+  </div>
+</body>
+</html>
