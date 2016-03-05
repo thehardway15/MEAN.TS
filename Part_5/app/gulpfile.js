@@ -23,11 +23,11 @@ gulp.task('ts_client', function () {
    return tsProjectClient.src('public/app/**/*.ts')
      .pipe(ts(tsProjectClient))
      .js
-     .pipe(gulp.dest('public/app/')); 
+     .pipe(gulp.dest('public/app/'));
 });
 
 gulp.task('watch', ['ts_server', 'ts_client'], function(){
-   gulp.watch(paths.appJavascript, ['ts_server', 'ts_client']); 
+   gulp.watch(paths.appJavascript, ['ts_server', 'ts_client']);
 });
 
 gulp.task('copy_angular', function() {

@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Damian Wiśniewski <d.wisniewski@uniso.pl>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/thehardway15/MEAN.TS",
+  "moduleType": [
+    "es6"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
